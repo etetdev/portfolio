@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <title>Romain Croquelois</title>
+    </head>
+    <!--================== BODY ==================-->
+    <body
+        id="home"
+        class="flex min-h-screen animate-fade-in flex-col overflow-x-hidden bg-porple-100 text-black antialiased font-inter dark:bg-porple-900 dark:text-white">
+        <!--================== HEADER ==================-->
+        <header class="sticky top-0 z-50 backdrop-blur-lg backdrop-filter">
+            <!--================== NAVBAR ==================-->
+            <nav
+                class="hidden h-10 flex-row items-center justify-center border-b border-porple-900 bg-opacity-30 py-8 text-center font-semibold backdrop-blur-3xl backdrop-filter dark:border-porple-200 md:visible md:flex md:space-x-32 lg:space-x-64 xl:space-x-96">
+                <a href="etet.moe/" class="font-extrabold text-4xl">RC</a>
+                <div class="block md:space-x-8">
+                    <a href="#home" class="">Home</a>
+                    <a href="#projects" class="">Projects</a>
+                    <a href="#contact" class="">Contact</a>
+                    <!--================== LANGUAGE MENU ==================-->
+                    <button
+                        id="dropdownDefaultButton"
+                        data-dropdown-toggle="dropdown"
+                        type="button"
+                        class="inline-flex items-center">
+                        Language
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewbox="0 0 24 24"
+                            stroke="currentColor"
+                            class="ml-2 h-4 w-4">
+                            <path stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div
+                        id="dropdown"
+                        class="z-10 hidden w-40 rounded-lg border border-porple-800 bg-opacity-30 backdrop-blur-3xl backdrop-filter dark:border-porple-200">
+                        <ul class="py-1 text-sm">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="block px-4 py-2 hover:bg-porple-500 hover:text-porple-800 dark:hover:bg-porple-800 dark:hover:text-porple-500">
+                                    Français
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="block px-4 py-2 hover:bg-porple-500 hover:text-porple-800 dark:hover:bg-porple-800 dark:hover:text-porple-500">
+                                    English
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="block px-4 py-2 hover:bg-porple-500 hover:text-porple-800 dark:hover:bg-porple-800 dark:hover:text-porple-500">
+                                    日本語
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--================== THEMES SWITCHER ==================-->
+                <button class="flex h-9 w-9 items-center justify-center">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill=""
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="dark h-6 w-6 cursor-pointer hover:fill-porple-600">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                    </svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="light h-6 w-6 cursor-pointer dark:fill-porple-50 dark:hover:fill-porple-500">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                    </svg>
+                </button>
+            </nav>
+        </header>
+        <!--================== BIO SECTION ==================-->
+        <section
+            class="animate-fadein container mx-auto mt-16 flex h-screen w-4/5 flex-col items-center justify-center text-center font-semibold text-5xl md:min-h-screen">
+            <p>Hi ! 😁</p>
+            <strong>
+                You call me
+                <span class="text-porple-500">Etet</span>
+                !
+            </strong>
+            <!--================== PROFIL PICTURE ==================-->
+            <img
+                src="./assets/images/avatar.webp"
+                alt="avatar"
+                class="mx-auto mt-12 flex h-48 w-48 flex-row justify-end rounded-full border-4 border-porple-700 object-cover dark:border-porple-500 md:h-64 md:w-64" />
+            <!--================== DESCRIPTION ==================-->
+            <div
+                class="container mx-auto mt-12 block space-y-2 px-12 text-center font-medium text-lg md:w-4/5 md:px-36">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Qui tempora dolorum quia suscipit iure laborum, non
+                    temporibus neque alias in eveniet voluptatum veritatis
+                    perspiciatis sunt impedit. Dignissimos, eius accusamus!
+                    Provident.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    <a
+                        href="#contact"
+                        class="font-medium text-porple-900 text-lg hover:text-porple-600 hover:underline hover:decoration-porple-600 hover:underline-offset-4 dark:text-porple-500 dark:hover:text-porple-500 dark:hover:decoration-porple-500">
+                        Contact-me !
+                    </a>
+                </p>
+            </div>
+        </section>
+        <!--================== PROJECTS SECTION ==================-->
+        <section
+            id="projects"
+            class="container mx-auto w-4/5 pt-32 text-center font-semibold text-3xl md:min-h-screen">
+            <p>My Projects ! 😎</p>
+            <div
+                class="mt-12 block space-y-2 px-12 text-center font-medium text-lg md:px-36">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Qui tempora dolorum quia suscipit iure laborum, non
+                    temporibus neque alias in eveniet voluptatum veritatis
+                    perspiciatis sunt impedit. Dignissimos, eius accusamus!
+                    Provident.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Qui tempora dolorum quia suscipit iure laborum, non
+                    temporibus neque alias in eveniet voluptatum veritatis
+                    perspiciatis sunt impedit. Dignissimos, eius accusamus!
+                    Provident.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Qui tempora dolorum quia suscipit iure laborum, non
+                    temporibus neque alias in eveniet voluptatum veritatis
+                    perspiciatis sunt impedit. Dignissimos, eius accusamus!
+                    Provident.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Qui tempora dolorum quia suscipit iure laborum, non
+                    temporibus neque alias in eveniet voluptatum veritatis
+                    perspiciatis sunt impedit. Dignissimos, eius accusamus!
+                    Provident.
+                </p>
+            </div>
+        </section>
+        <!--================== TEST SECTION ==================-->
+        <section
+            id="contact"
+            class="container mx-auto w-4/5 pt-32 text-center font-semibold text-3xl md:min-h-screen">
+            <p>TEST ! 🥶</p>
+            <div
+                class="mt-12 block space-y-2 px-12 text-center font-medium text-lg md:px-36">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Qui tempora dolorum quia suscipit iure laborum, non
+                    temporibus neque alias in eveniet voluptatum veritatis
+                    perspiciatis sunt impedit. Dignissimos, eius accusamus!
+                    Provident.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Qui tempora dolorum quia suscipit iure laborum, non
+                    temporibus neque alias in eveniet voluptatum veritatis
+                    perspiciatis sunt impedit. Dignissimos, eius accusamus!
+                    Provident.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Qui tempora dolorum quia suscipit iure laborum, non
+                    temporibus neque alias in eveniet voluptatum veritatis
+                    perspiciatis sunt impedit. Dignissimos, eius accusamus!
+                    Provident.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Qui tempora dolorum quia suscipit iure laborum, non
+                    temporibus neque alias in eveniet voluptatum veritatis
+                    perspiciatis sunt impedit. Dignissimos, eius accusamus!
+                    Provident.
+                </p>
+            </div>
+        </section>
+        <!--================== FOOTER ==================-->
+        <footer
+            class="container mx-auto w-4/5 border-t border-porple-900 px-4 text-center font-mono text-sm dark:border-porple-200 md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3">
+            <p class="mt-12 mb-4">© Romain Croquelois • 2022-2023</p>
+        </footer>
+        <!--================== BACK TO THE TOP BUTTON ==================-->
+        <button
+            type="button"
+            id="btn-back-to-top"
+            class="display-none fixed bottom-8 right-8 inline-block rounded-lg bg-porple-600 p-4 shadow-md transition duration-150 ease-in-out hover:bg-porple-700 hover:shadow-lg focus:bg-porple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-porple-800 active:shadow-lg">
+            <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="false"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="h-4 w-4">
+                <path
+                    fill="currentColor"
+                    d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
+            </svg>
+        </button>
+        <!--================== SCRIPTS ==================-->
+        <script src="./scripts/button.js"></script>
+        <script src="./scripts/themes.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+        <script>
+            VANTA.BIRDS({
+                el: '#home',
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.0,
+                minWidth: 200.0,
+                scale: 1.0,
+                scaleMobile: 1.0,
+                backgroundAlpha: 0,
+                color1: 0x4a5568,
+                color2: 0xc5dae3,
+                colorMode: 'lerpGradient',
+                birdSize: 0.5,
+                wingSpan: 15.0,
+                speedLimit: 3.0,
+                separation: 50.0,
+                alignment: 1.0,
+                cohesion: 1.0,
+                quantity: 3.0,
+            });
+        </script>
+    </body>
+</html>
