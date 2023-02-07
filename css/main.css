@@ -1805,10 +1805,15 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.5' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
+.before\:content-\[\'\'\]::before {
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
 @media (hover: hover) and (pointer: fine) {
-  .hover\:bg-porple-500:hover {
+  .hover\:bg-porple-300:hover {
     --tw-bg-opacity: 1;
-    background-color: rgb(87 70 135 / var(--tw-bg-opacity));
+    background-color: rgb(150 134 192 / var(--tw-bg-opacity));
   }
 
   .hover\:bg-porple-600:hover {
@@ -1820,9 +1825,9 @@ body {
     fill: #46386B;
   }
 
-  .hover\:text-porple-800:hover {
+  .hover\:text-porple-400:hover {
     --tw-text-opacity: 1;
-    color: rgb(35 28 54 / var(--tw-text-opacity));
+    color: rgb(114 94 171 / var(--tw-text-opacity));
   }
 
   .hover\:text-porple-600:hover {
