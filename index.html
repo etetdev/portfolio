@@ -10,12 +10,12 @@
 	<!--================== BODY ==================-->
 	<body
 		id="home"
-		class="flex min-h-screen animate-fade-in flex-col overflow-x-hidden bg-porple-200 text-black antialiased font-inter dark:bg-porple-800 dark:text-white">
+		class="flex min-h-screen animate-fade-in flex-col overflow-x-hidden bg-porple-200 text-black antialiased transition font-inter dark:bg-porple-800 dark:text-white">
 		<!--================== HEADER ==================-->
-		<header class="sticky top-0 z-50 backdrop-blur-lg backdrop-filter">
+		<header class="sticky top-0 z-50 backdrop-blur-lg backdrop-opacity-70">
 			<!--================== NAVBAR ==================-->
 			<nav
-				class="hidden h-10 flex-row items-center justify-center border-b border-porple-900 bg-opacity-30 py-8 text-center font-semibold backdrop-blur-3xl backdrop-filter dark:border-porple-200 md:visible md:flex md:space-x-32 lg:space-x-64 xl:space-x-96">
+				class="hidden h-10 flex-row items-center justify-center border-b border-porple-900 bg-opacity-10 py-8 text-center font-semibold backdrop-blur-3xl backdrop-opacity-80 backdrop-filter dark:border-porple-200 md:visible md:flex md:space-x-32 lg:space-x-64 xl:space-x-96">
 				<a
 					href="./index.html"
 					class="font-extrabold text-4xl hover:text-porple-400">
@@ -45,7 +45,7 @@
 					</button>
 					<div
 						id="dropdown"
-						class="z-10 hidden w-40 rounded-lg border border-porple-800 bg-opacity-30 backdrop-blur-3xl backdrop-filter dark:border-porple-200">
+						class="z-10 hidden w-40 rounded-lg border border-porple-800 bg-opacity-50 shadow-2xl backdrop-blur-3xl backdrop-opacity-80 backdrop-filter dark:border-porple-200">
 						<ul class="py-1 text-sm">
 							<li>
 								<a
@@ -162,53 +162,51 @@
 					contact me !
 				</p>
 			</div>
-			<div class="mx-auto w-full text-left text-lg 2xl:w-1/2">
-				<div>
-					<form
-						action="https://api.web3forms.com/submit"
-						method="POST">
+			<!--================== FORM ==================-->
+			<div
+				class="mx-auto w-4/5 rounded-lg p-8 text-left shadow-2xl backdrop-blur-2xl backdrop-opacity-70 backdrop-filter text-lg md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3">
+				<form action="https://api.web3forms.com/submit" method="POST">
+					<input
+						type="hidden"
+						name="access_key"
+						value="965ffcf8-1dbf-4c10-a4a9-370673baf02c" />
+					<input
+						type="hidden"
+						name="redirect"
+						value="https://etet.moe/thanks.html" />
+					<label class="mt-6 block md:mt-12">
+						<span>Your name</span>
 						<input
-							type="hidden"
-							name="access_key"
-							value="965ffcf8-1dbf-4c10-a4a9-370673baf02c" />
+							type="text"
+							name="name"
+							placeholder="Write your name here... 👋"
+							class="mt-1 block w-full rounded-md p-2 text-black text-base focus:outline-none" />
+					</label>
+					<label class="mt-6 block md:mt-12">
+						<span>Email address</span>
 						<input
-							type="hidden"
-							name="redirect"
-							value="https://etet.moe/thanks.html" />
-						<label class="mt-6 block md:mt-12">
-							<span>Your name</span>
-							<input
-								type="text"
-								name="name"
-								placeholder="Write your name here... 👋"
-								class="mt-1 block w-full rounded-md p-2 text-black text-base focus:outline-none" />
-						</label>
-						<label class="mt-6 block md:mt-12">
-							<span>Email address</span>
-							<input
-								name="_subject"
-								type="email"
-								placeholder="Write your email adress here... 📧"
-								required
-								class="mt-1 block w-full rounded-md p-2 text-black text-base focus:outline-none" />
-						</label>
-						<label class="mt-6 block md:mt-12">
-							<span>Message</span>
-							<textarea
-								name="message"
-								rows="5"
-								placeholder="Write your message here... ✒️"
-								class="mt-1 block w-full rounded-md p-2 text-black text-base focus:outline-none"></textarea>
-						</label>
-						<div class="mt-4">
-							<button
-								type="submit"
-								class="focus:shadow-outline h-10 w-full rounded-lg bg-porple-400 text-white shadow-md transition duration-150 ease-in-out hover:bg-porple-600 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-porple-800 active:shadow-lg">
-								Send
-							</button>
-						</div>
-					</form>
-				</div>
+							name="_subject"
+							type="email"
+							placeholder="Write your email adress here... 📧"
+							required
+							class="mt-1 block w-full rounded-md p-2 text-black text-base focus:outline-none" />
+					</label>
+					<label class="mt-6 block md:mt-12">
+						<span>Message</span>
+						<textarea
+							name="message"
+							rows="5"
+							placeholder="Write your message here... ✒️"
+							class="mt-1 block w-full rounded-md p-2 text-black text-base focus:outline-none"></textarea>
+					</label>
+					<div class="mt-4">
+						<button
+							type="submit"
+							class="focus:shadow-outline h-10 w-full rounded-lg bg-porple-400 text-white shadow-md transition duration-150 ease-in-out hover:bg-porple-600 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-porple-800 active:shadow-lg">
+							Send
+						</button>
+					</div>
+				</form>
 			</div>
 		</section>
 		<!--================== FOOTER ==================-->
@@ -223,7 +221,7 @@
 		<button
 			type="button"
 			id="btn-back-to-top"
-			class="display-none fixed bottom-8 right-8 inline-block rounded-lg bg-porple-400 p-4 text-white shadow-md transition duration-150 ease-in-out hover:bg-porple-600 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-porple-800 active:shadow-lg">
+			class="display-none fixed bottom-8 right-8 inline-block rounded-lg bg-porple-500 p-4 text-white shadow-md transition duration-150 ease-in-out hover:bg-porple-600 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-porple-800 active:shadow-lg">
 			<svg
 				aria-hidden="true"
 				focusable="false"
