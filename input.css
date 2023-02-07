@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 ::selection {
-    background-color: #c7b6fc;
-    color: #000000;
+	background-color: #c7b6fc;
+	color: #000000;
 }
 .display-none {
-    @apply hidden;
+	@apply hidden;
 }
