@@ -8,11 +8,13 @@ module.exports = {
 	theme: {
 		extend: {
 			animation: {
-				'fade-in': 'fade-in 1s',
+				fade: 'fade 1s',
 				gradient: 'gradient 5s ease infinite',
+				wave: 'wave 3s linear infinite',
+				text: 'text 10s infinite',
 			},
 			keyframes: {
-				'fade-in': {
+				fade: {
 					'0%': { opacity: '0' },
 					'100%': { opacity: '1' },
 				},
@@ -25,6 +27,24 @@ module.exports = {
 						'background-size': '200% 200%',
 						'background-position': 'right center',
 					},
+				},
+				wave: {
+					'0%': { transform: 'rotate(0.0deg)' },
+					'10%': { transform: 'rotate(14deg)' },
+					'20%': { transform: 'rotate(-8deg)' },
+					'30%': { transform: 'rotate(14deg)' },
+					'40%': { transform: 'rotate(-4deg)' },
+					'50%': { transform: 'rotate(10.0deg)' },
+					'60%': { transform: 'rotate(0.0deg)' },
+					'100%': { transform: 'rotate(0.0deg)' },
+				},
+				text: {
+					'0%': { content: '"Hey !"' },
+					'33%': { content: '"Hey !"' },
+					'34%': { content: '"Salut !"' },
+					'66%': { content: '"Salut !"' },
+					'67%': { content: '"こんにちは !"' },
+					'100%': { content: '"こんにちは !"' },
 				},
 			},
 			colors: {

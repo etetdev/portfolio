@@ -617,6 +617,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-64 {
+  margin-top: 16rem;
+}
+
 .block {
   display: block;
 }
@@ -693,7 +697,7 @@ video {
   width: 100%;
 }
 
-@keyframes fade-in {
+@keyframes fade {
   0% {
     opacity: 0;
   }
@@ -703,8 +707,46 @@ video {
   }
 }
 
-.animate-fade-in {
-  animation: fade-in 1s;
+.animate-fade {
+  animation: fade 1s;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0.0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10.0deg);
+  }
+
+  60% {
+    transform: rotate(0.0deg);
+  }
+
+  100% {
+    transform: rotate(0.0deg);
+  }
+}
+
+.animate-wave {
+  animation: wave 3s linear infinite;
 }
 
 @keyframes gradient {
@@ -1058,6 +1100,42 @@ video {
   display: none;
 }
 
+@keyframes text {
+  0% {
+    content: "Hey !";
+  }
+
+  33% {
+    content: "Hey !";
+  }
+
+  34% {
+    content: "Salut !";
+  }
+
+  66% {
+    content: "Salut !";
+  }
+
+  67% {
+    content: "こんにちは !";
+  }
+
+  100% {
+    content: "こんにちは !";
+  }
+}
+
+.before\:animate-text::before {
+  content: var(--tw-content);
+  animation: text 10s infinite;
+}
+
+.before\:content-\[\'\'\]::before {
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
 @media (hover: hover) and (pointer: fine) {
   .hover\:bg-porple-300:hover {
     --tw-bg-opacity: 1;
@@ -1176,6 +1254,24 @@ video {
 
   .dark .dark\:hover\:decoration-porple-500:hover {
     text-decoration-color: #574687;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:mt-32 {
+    margin-top: 8rem;
+  }
+
+  .sm\:mt-48 {
+    margin-top: 12rem;
+  }
+
+  .sm\:mt-64 {
+    margin-top: 16rem;
+  }
+
+  .sm\:mt-96 {
+    margin-top: 24rem;
   }
 }
 

@@ -8,7 +8,7 @@
 		<title>Thank you !</title>
 	</head>
 	<body
-		class="flex min-h-screen animate-fade-in flex-col overflow-x-hidden bg-porple-200 text-black antialiased font-inter dark:bg-porple-800 dark:text-white">
+		class="font-inter flex min-h-screen animate-fade-in flex-col overflow-x-hidden bg-porple-200 text-black antialiased dark:bg-porple-800 dark:text-white">
 		<!--================== HEADER ==================-->
 		<header class="sticky top-0 z-50 backdrop-blur-lg backdrop-filter">
 			<!--================== NAVBAR ==================-->
@@ -16,7 +16,7 @@
 				class="hidden h-10 flex-row items-center justify-center border-b border-porple-900 bg-opacity-30 py-8 text-center font-semibold backdrop-blur-3xl backdrop-filter dark:border-porple-200 md:visible md:flex md:space-x-32 lg:space-x-64 xl:space-x-96">
 				<a
 					href="./index.html"
-					class="font-extrabold text-4xl hover:text-porple-400">
+					class="text-4xl font-extrabold hover:text-porple-400">
 					RC
 				</a>
 				<div class="block md:space-x-8">
@@ -33,7 +33,7 @@
 						class="hover:text-porple-400">
 						Contact
 					</a>
-					<!--================== LANGUAGE MENU ==================-->
+					<!--================== LANGUAGE BUTTON ==================-->
 					<button
 						id="dropdownDefaultButton"
 						data-dropdown-toggle="dropdown"
@@ -49,35 +49,28 @@
 							<path stroke-width="2" d="M19 9l-7 7-7-7"></path>
 						</svg>
 					</button>
+					<!--================== LANGUAGE MENU ==================-->
 					<div
 						id="dropdown"
-						class="z-10 hidden w-40 rounded-lg border border-porple-800 bg-opacity-30 backdrop-blur-3xl backdrop-filter dark:border-porple-200">
-						<ul class="py-1 text-sm">
-							<li>
-								<a
-									href="#"
-									class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
-									🇫🇷 Français
-								</a>
-							</li>
-							<li>
-								<a
-									href="#"
-									class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
-									🇺🇸 English
-								</a>
-							</li>
-							<li>
-								<a
-									href="#"
-									class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
-									🇯🇵 日本語
-								</a>
-							</li>
-						</ul>
+						class="z-10 hidden w-40 rounded-lg border border-porple-800 bg-porple-200 py-1 text-sm shadow-2xl dark:border-porple-200 dark:bg-porple-800">
+						<option
+							value="fr"
+							class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
+							🇫🇷 Français
+						</option>
+						<option
+							value="en"
+							class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
+							🇺🇸 English
+						</option>
+						<option
+							value="jp"
+							class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
+							🇯🇵 日本語
+						</option>
 					</div>
 				</div>
-				<!--================== THEMES SWITCHER ==================-->
+				<!--================== THEMES BUTTON ==================-->
 				<button class="flex h-9 w-9 items-center justify-center">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -109,14 +102,14 @@
 		<!--================== MAIN ==================-->
 		<main
 			id="vanta"
-			class="mx-auto flex h-screen w-4/5 flex-col items-center justify-center text-center font-bold text-6xl md:min-h-screen">
+			class="mx-auto flex h-screen w-4/5 flex-col items-center justify-center text-center text-6xl font-bold md:min-h-screen">
 			<p>Thank you !</p>
-			<p class="font-semibold text-xl">
+			<p class="text-xl font-semibold">
 				Your message has been sent (～￣▽￣)～
 			</p>
 			<a
 				href="./index.html"
-				class="mt-8 font-medium text-porple-600 text-lg hover:text-porple-600 hover:underline hover:decoration-porple-600 hover:underline-offset-4 dark:text-porple-300 dark:hover:text-porple-500 dark:hover:decoration-porple-500">
+				class="mt-8 text-lg font-medium text-porple-600 hover:text-porple-600 hover:underline hover:decoration-porple-600 hover:underline-offset-4 dark:text-porple-300 dark:hover:text-porple-500 dark:hover:decoration-porple-500">
 				Click here to go back to the Home page
 			</a>
 		</main>

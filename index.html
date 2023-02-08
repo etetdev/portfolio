@@ -10,7 +10,7 @@
 	<!--================== BODY ==================-->
 	<body
 		id="home"
-		class="font-inter flex min-h-screen animate-fade-in flex-col overflow-x-hidden bg-porple-200 text-black antialiased transition dark:bg-porple-800 dark:text-white">
+		class="font-inter flex min-h-screen animate-fade flex-col overflow-x-hidden bg-porple-200 text-black antialiased transition dark:bg-porple-800 dark:text-white">
 		<!--================== HEADER ==================-->
 		<header class="sticky top-0 z-50 bg-porple-200 dark:bg-porple-800">
 			<!--================== NAVBAR ==================-->
@@ -43,31 +43,28 @@
 							<path stroke-width="2" d="M19 9l-7 7-7-7"></path>
 						</svg>
 					</button>
+					<!--================== LANGUAGE MENU ==================-->
 					<div
 						id="dropdown"
-						class="z-10 hidden w-40 rounded-lg border border-porple-800 bg-porple-200 shadow-2xl dark:border-porple-200 dark:bg-porple-800">
-						<ul class="py-1 text-sm">
-							<option
-								value="fr"
-								class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
-								🇫🇷 Français
-							</option>
-							<option
-								value="en"
-								href="#"
-								class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
-								🇺🇸 English
-							</option>
-							<option
-								value="jp"
-								href="#"
-								class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
-								🇯🇵 日本語
-							</option>
-						</ul>
+						class="z-10 hidden w-40 rounded-lg border border-porple-800 bg-porple-200 py-1 text-sm shadow-2xl dark:border-porple-200 dark:bg-porple-800">
+						<option
+							value="fr"
+							class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
+							🇫🇷 Français
+						</option>
+						<option
+							value="en"
+							class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
+							🇺🇸 English
+						</option>
+						<option
+							value="jp"
+							class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
+							🇯🇵 日本語
+						</option>
 					</div>
 				</div>
-				<!--================== THEMES SWITCHER ==================-->
+				<!--================== THEMES BUTTON ==================-->
 				<button class="flex h-9 w-9 items-center justify-center">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +97,9 @@
 		<section
 			id="vanta"
 			class="container mx-auto mt-16 flex h-screen w-4/5 flex-col items-center justify-center text-center text-3xl font-semibold md:min-h-screen">
-			<p>Hey ! 😁</p>
+			<p class="before:animate-text before:content-['']">
+				<span class="inline-block animate-wave">👋</span>
+			</p>
 			<p class="text-6xl font-extrabold">
 				You can call me
 				<span
@@ -203,7 +202,7 @@
 		</section>
 		<!--================== FOOTER ==================-->
 		<footer
-			class="container mx-auto mt-32 w-4/5 border-t border-porple-900 px-4 text-center font-mono text-sm dark:border-porple-200 md:mt-0 md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3">
+			class="container mx-auto mt-32 w-4/5 border-t border-porple-900 px-4 text-center font-mono text-sm dark:border-porple-200 md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3">
 			<p class="my-4">
 				© Romain Croquelois • 2022-2023 From
 				<a href="https://youtu.be/tl8zuAw3nBI?t=5">🇫🇷</a>
