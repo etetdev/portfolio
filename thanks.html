@@ -8,37 +8,27 @@
 		<title>Thank you !</title>
 	</head>
 	<body
-		class="font-inter flex min-h-screen animate-fade-in flex-col overflow-x-hidden bg-porple-200 text-black antialiased dark:bg-porple-800 dark:text-white">
+		class="font-inter animate-fade-in flex min-h-screen flex-col overflow-x-hidden bg-porple-200 text-black antialiased dark:bg-porple-800 dark:text-white">
 		<!--================== HEADER ==================-->
-		<header class="sticky top-0 z-50 backdrop-blur-lg backdrop-filter">
+		<header class="sticky top-0 z-50 bg-porple-200 dark:bg-porple-800">
 			<!--================== NAVBAR ==================-->
 			<nav
-				class="hidden h-10 flex-row items-center justify-center border-b border-porple-900 bg-opacity-30 py-8 text-center font-semibold backdrop-blur-3xl backdrop-filter dark:border-porple-200 md:visible md:flex md:space-x-32 lg:space-x-64 xl:space-x-96">
+				class="hidden h-10 flex-row items-center justify-center border-b border-porple-900 py-8 text-center font-semibold dark:border-porple-200 md:visible md:flex md:space-x-32 lg:space-x-64 xl:space-x-96">
 				<a
 					href="./index.html"
 					class="text-4xl font-extrabold hover:text-porple-400">
 					RC
 				</a>
 				<div class="block md:space-x-8">
-					<a href="./index.html" class="hover:text-porple-400">
-						Home
-					</a>
-					<a
-						href="./index.html#projects"
-						class="hover:text-porple-400">
-						Projects
-					</a>
-					<a
-						href="./index.html#contact"
-						class="hover:text-porple-400">
-						Contact
-					</a>
-					<!--================== LANGUAGE BUTTON ==================-->
+					<a href="#home" class="hover:text-porple-400">Home</a>
+					<a href="#tools" class="hover:text-porple-400">Skills</a>
+					<a href="#contact" class="hover:text-porple-400">Contact</a>
+					<!--================== LANGUAGE MENU ==================-->
 					<button
 						id="dropdownDefaultButton"
 						data-dropdown-toggle="dropdown"
 						type="button"
-						class="inline-flex items-center">
+						class="inline-flex items-center hover:text-porple-400">
 						Language
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -53,20 +43,26 @@
 					<div
 						id="dropdown"
 						class="z-10 hidden w-40 rounded-lg border border-porple-800 bg-porple-200 py-1 text-sm shadow-2xl dark:border-porple-200 dark:bg-porple-800">
-						<option
-							value="fr"
-							class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
-							🇫🇷 Français
+						<option value="fr">
+							<a
+								href="#"
+								class="block px-4 py-2 hover:text-porple-300">
+								🇫🇷 Français
+							</a>
 						</option>
-						<option
-							value="en"
-							class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
-							🇺🇸 English
+						<option value="en">
+							<a
+								href="#"
+								class="block px-4 py-2 hover:text-porple-300">
+								🇺🇸 English
+							</a>
 						</option>
-						<option
-							value="jp"
-							class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
-							🇯🇵 日本語
+						<option value="jp">
+							<a
+								href="#"
+								class="block px-4 py-2 hover:text-porple-300">
+								🇯🇵 日本語
+							</a>
 						</option>
 					</div>
 				</div>
@@ -99,12 +95,12 @@
 				</button>
 			</nav>
 		</header>
-		<!--================== MAIN ==================-->
+		<!--================== MAIN SECTION ==================-->
 		<main
 			id="vanta"
 			class="mx-auto flex h-screen w-4/5 flex-col items-center justify-center text-center text-6xl font-bold md:min-h-screen">
-			<p>Thank you !</p>
-			<p class="text-xl font-semibold">
+			<p>Thank you ! 🙌</p>
+			<p class="mt-4 text-xl font-semibold">
 				Your message has been sent (～￣▽￣)～
 			</p>
 			<a
@@ -115,7 +111,7 @@
 		</main>
 		<!--================== FOOTER ==================-->
 		<footer
-			class="container mx-auto w-4/5 border-t border-porple-900 px-4 text-center font-mono text-sm dark:border-porple-200 md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3">
+			class="container mx-auto mt-32 w-4/5 border-t border-porple-900 px-4 text-center font-mono text-sm dark:border-porple-200 md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3">
 			<p class="my-4">
 				© Romain Croquelois • 2022-2023 From
 				<a href="https://youtu.be/tl8zuAw3nBI?t=5">🇫🇷</a>

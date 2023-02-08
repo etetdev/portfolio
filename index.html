@@ -23,16 +23,14 @@
 				</a>
 				<div class="block md:space-x-8">
 					<a href="#home" class="hover:text-porple-400">Home</a>
-					<a href="#projects" class="hover:text-porple-400">
-						Projects
-					</a>
+					<a href="#tools" class="hover:text-porple-400">Skills</a>
 					<a href="#contact" class="hover:text-porple-400">Contact</a>
 					<!--================== LANGUAGE MENU ==================-->
 					<button
 						id="dropdownDefaultButton"
 						data-dropdown-toggle="dropdown"
 						type="button"
-						class="inline-flex items-center">
+						class="inline-flex items-center hover:text-porple-400">
 						Language
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -47,20 +45,26 @@
 					<div
 						id="dropdown"
 						class="z-10 hidden w-40 rounded-lg border border-porple-800 bg-porple-200 py-1 text-sm shadow-2xl dark:border-porple-200 dark:bg-porple-800">
-						<option
-							value="fr"
-							class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
-							🇫🇷 Français
+						<option value="fr">
+							<a
+								href="#"
+								class="block px-4 py-2 hover:text-porple-300">
+								🇫🇷 Français
+							</a>
 						</option>
-						<option
-							value="en"
-							class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
-							🇺🇸 English
+						<option value="en">
+							<a
+								href="#"
+								class="block px-4 py-2 hover:text-porple-300">
+								🇺🇸 English
+							</a>
 						</option>
-						<option
-							value="jp"
-							class="block px-4 py-2 hover:bg-porple-300 dark:hover:bg-porple-800">
-							🇯🇵 日本語
+						<option value="jp">
+							<a
+								href="#"
+								class="block px-4 py-2 hover:text-porple-300">
+								🇯🇵 日本語
+							</a>
 						</option>
 					</div>
 				</div>
@@ -96,7 +100,7 @@
 		<!--================== BIO SECTION ==================-->
 		<section
 			id="vanta"
-			class="container mx-auto mt-16 flex h-screen w-4/5 flex-col items-center justify-center text-center text-3xl font-semibold md:min-h-screen">
+			class="container mx-auto flex h-screen w-4/5 flex-col items-center justify-center text-center text-3xl font-semibold md:min-h-screen">
 			<p class="before:animate-text before:content-['']">
 				<span class="inline-block animate-wave">👋</span>
 			</p>
@@ -113,7 +117,7 @@
 				src="./assets/images/avatar.webp"
 				alt="avatar"
 				class="mx-auto mt-12 flex h-32 w-32 flex-row justify-end rounded-full border-4 border-porple-600 object-cover object-top dark:border-porple-400 md:h-64 md:w-64" />
-			<!--================== DESCRIPTION ==================-->
+			<!--================== BIO ==================-->
 			<div
 				class="container mx-auto mt-12 block space-y-2 px-12 text-center text-lg font-medium md:w-4/5 md:px-36">
 				<p>
@@ -128,26 +132,13 @@
 				</a>
 			</div>
 		</section>
-		<!--================== PROJECTS SECTION ==================-->
-		<section
-			id="projects"
-			class="mx-auto flex h-screen w-4/5 flex-col items-center justify-center text-center text-3xl font-semibold md:min-h-screen">
-			<p>My Projects ! 😎</p>
-			<div
-				class="container mt-12 block space-y-4 px-12 text-center text-lg font-medium md:w-4/5 md:px-36">
-				<p>
-					I'm curently working on a lot of projects, I will show them
-					soon !
-				</p>
-			</div>
-		</section>
 		<!--================== CONTACT SECTION ==================-->
 		<section
 			id="contact"
 			class="mx-auto flex h-screen w-4/5 flex-col items-center justify-center text-center text-3xl font-semibold md:min-h-screen">
 			<p>My Contact ! 💌</p>
 			<div
-				class="container mt-12 block space-y-4 px-12 text-center text-lg font-medium md:w-4/5 md:px-36">
+				class="container mt-8 block space-y-4 px-12 text-center text-lg font-medium md:w-4/5 md:px-36">
 				<p>
 					Here you will find all my contact informations, feel free to
 					contact me !
@@ -170,7 +161,7 @@
 						<input
 							type="text"
 							name="name"
-							placeholder="Write your name here... 👋"
+							placeholder="Write your name here... 🐱‍💻"
 							class="mt-1 block w-full rounded-md p-2 text-base text-black focus:outline-none" />
 					</label>
 					<label class="mt-6 block md:mt-12">
@@ -212,7 +203,7 @@
 		<button
 			type="button"
 			id="btn-back-to-top"
-			class="display-none fixed bottom-8 right-8 inline-block rounded-lg bg-porple-500 p-4 text-white shadow-md transition duration-150 ease-in-out hover:bg-porple-600 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-porple-800 active:shadow-lg">
+			class="fixed bottom-8 right-8 hidden rounded-lg bg-porple-500 p-4 text-white shadow-md transition duration-150 ease-in-out hover:bg-porple-600 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-porple-800 active:shadow-lg">
 			<svg
 				aria-hidden="true"
 				focusable="false"
