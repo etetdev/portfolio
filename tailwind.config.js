@@ -9,11 +9,22 @@ module.exports = {
 		extend: {
 			animation: {
 				'fade-in': 'fade-in 1s',
+				gradient: 'gradient 5s ease infinite',
 			},
 			keyframes: {
 				'fade-in': {
 					'0%': { opacity: '0' },
 					'100%': { opacity: '1' },
+				},
+				gradient: {
+					'0%, 100%': {
+						'background-size': '200% 200%',
+						'background-position': 'left center',
+					},
+					'50%': {
+						'background-size': '200% 200%',
+						'background-position': 'right center',
+					},
 				},
 			},
 			colors: {
@@ -31,13 +42,13 @@ module.exports = {
 				},
 			},
 		},
+		corePlugins: {
+			fontSize: false,
+		},
+		plugins: [
+			require('prettier-plugin-tailwindcss'),
+			require('tailwindcss-fluid-type'),
+			require('tailwindcss-font-inter'),
+		],
 	},
-	corePlugins: {
-		fontSize: false,
-	},
-	plugins: [
-		require('prettier-plugin-tailwindcss'),
-		require('tailwindcss-fluid-type'),
-		require('tailwindcss-font-inter'),
-	],
 };
