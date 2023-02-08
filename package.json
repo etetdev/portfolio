@@ -18,6 +18,7 @@
 		"tailwindcss-font-inter": "^3.0.1"
 	},
 	"dependencies": {
+		"i18next": "^22.4.9",
 		"tailwindcss-fluid-type": "^2.0.3"
 	}
 }
