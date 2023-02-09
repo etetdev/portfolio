@@ -23,7 +23,7 @@
 				</a>
 				<div class="block md:space-x-8">
 					<a href="#home" class="hover:text-porple-400">Home</a>
-					<a href="#tools" class="hover:text-porple-400">Skills</a>
+					<a href="#skills" class="hover:text-porple-400">Skills</a>
 					<a href="#contact" class="hover:text-porple-400">Contact</a>
 					<!--================== LANGUAGE MENU ==================-->
 					<button
@@ -72,11 +72,11 @@
 				<button class="flex h-9 w-9 items-center justify-center">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						fill=""
+						fill="none"
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="dark h-6 w-6 cursor-pointer hover:fill-porple-600">
+						class="dark h-6 w-6 cursor-pointer">
 						<path
 							stroke-linecap="round"
 							stroke-linejoin="round"
@@ -88,7 +88,7 @@
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="light h-6 w-6 cursor-pointer dark:fill-porple-50 dark:hover:fill-porple-500">
+						class="light h-6 w-6 cursor-pointer">
 						<path
 							stroke-linecap="round"
 							stroke-linejoin="round"
@@ -100,7 +100,7 @@
 		<!--================== BIO SECTION ==================-->
 		<section
 			id="vanta"
-			class="container mx-auto flex h-screen w-4/5 flex-col items-center justify-center text-center text-3xl font-semibold md:min-h-screen">
+			class="container mx-auto mt-32 flex h-screen w-4/5 flex-col items-center justify-center text-center text-3xl font-semibold md:mt-0 md:min-h-screen">
 			<p class="before:animate-text before:content-['']">
 				<span class="inline-block animate-wave">👋</span>
 			</p>
@@ -114,7 +114,7 @@
 			</p>
 			<!--================== PROFIL PICTURE ==================-->
 			<img
-				src="./assets/images/avatar.webp"
+				src="./assets/img/avatar.webp"
 				alt="avatar"
 				class="mx-auto mt-12 flex h-32 w-32 flex-row justify-end rounded-full border-4 border-porple-600 object-cover object-top dark:border-porple-400 md:h-64 md:w-64" />
 			<!--================== BIO ==================-->
@@ -132,10 +132,42 @@
 				</a>
 			</div>
 		</section>
+		<!--================== SKILLS SECTION ==================-->
+		<section
+			id="skills"
+			class="mx-auto mt-64 flex h-screen w-4/5 flex-col items-center justify-center text-center text-3xl font-semibold md:mt-0 md:min-h-screen">
+			<p>My Skills ! 😎</p>
+			<div
+				class="container mt-8 block space-y-4 px-12 text-center text-lg font-medium md:w-4/5 md:px-36">
+				<p>Here you will find all languages I use and learn !</p>
+			</div>
+			<div
+				class="mt-12 flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/">
+					<img src="./assets/img/html.svg"" class="h-24 w-24" />
+				</a>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/">
+					<img src="./assets/img/css.svg" class="h-24 w-24" />
+				</a>
+				<a
+					href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/">
+					<img src="./assets/img/javascript.svg" class="h-24 w-24" />
+				</a>
+				<a href="https://www.typescriptlang.org/">
+					<img src="./assets/img/typescript.svg" class="h-24 w-24" />
+				</a>
+				<a href="https://tailwindcss.com/">
+					<img src="./assets/img/tailwindcss.svg" class="h-24 w-24" />
+				</a>
+				<a href="https://nextjs.org/">
+					<img src="./assets/img/nextjs.svg" class="h-24 w-24" />
+				</a>
+			</div>
+		</section>
 		<!--================== CONTACT SECTION ==================-->
 		<section
 			id="contact"
-			class="mx-auto flex h-screen w-4/5 flex-col items-center justify-center text-center text-3xl font-semibold md:min-h-screen">
+			class="mx-auto mt-64 flex h-screen w-4/5 flex-col items-center justify-center text-center text-3xl font-semibold md:mt-0 md:min-h-screen">
 			<p>My Contact ! 💌</p>
 			<div
 				class="container mt-8 block space-y-4 px-12 text-center text-lg font-medium md:w-4/5 md:px-36">
@@ -221,30 +253,5 @@
 		<script src="./scripts/button.js"></script>
 		<script src="./scripts/themes.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
-		<script>
-			VANTA.BIRDS({
-				el: '#vanta',
-				mouseControls: true,
-				touchControls: true,
-				gyroControls: false,
-				minHeight: 200.0,
-				minWidth: 200.0,
-				scale: 1.0,
-				scaleMobile: 1.0,
-				backgroundAlpha: 0,
-				color1: 0x4a5568,
-				color2: 0xc5dae3,
-				colorMode: 'lerpGradient',
-				birdSize: 0.5,
-				wingSpan: 15.0,
-				speedLimit: 3.0,
-				separation: 50.0,
-				alignment: 1.0,
-				cohesion: 1.0,
-				quantity: 3.0,
-			});
-		</script>
 	</body>
 </html>

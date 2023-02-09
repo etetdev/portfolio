@@ -11,7 +11,7 @@ module.exports = {
 				fade: 'fade 1s',
 				gradient: 'gradient 5s ease infinite',
 				wave: 'wave 3s linear infinite',
-				text: 'text 10s infinite',
+				text: 'text 8s infinite',
 			},
 			keyframes: {
 				fade: {
