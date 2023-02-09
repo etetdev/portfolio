@@ -43,7 +43,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Inter var;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -653,6 +653,14 @@ video {
   height: 1rem;
 }
 
+.h-4\/5 {
+  height: 80%;
+}
+
+.h-1\/5 {
+  height: 20%;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -683,20 +691,6 @@ video {
 
 .w-4 {
   width: 1rem;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.animate-fade {
-  animation: fade 1s;
 }
 
 @keyframes wave {
@@ -789,6 +783,10 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -846,12 +844,9 @@ video {
   background-color: rgb(87 70 135 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-0 {
-  --tw-bg-opacity: 0;
-}
-
-.bg-opacity-100 {
+.bg-porple-300 {
   --tw-bg-opacity: 1;
+  background-color: rgb(150 134 192 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -878,24 +873,16 @@ video {
           background-clip: text;
 }
 
+.fill-white {
+  fill: #fff;
+}
+
 .stroke-current {
   stroke: currentColor;
 }
 
-.stroke-red-900 {
-  stroke: #7f1d1d;
-}
-
-.stroke-1 {
-  stroke-width: 1;
-}
-
 .stroke-2 {
   stroke-width: 2;
-}
-
-.stroke-0 {
-  stroke-width: 0;
 }
 
 .object-cover {
@@ -941,6 +928,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.font-sans {
+  font-family: Inter var;
 }
 
 .font-mono {
@@ -1017,6 +1008,16 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-porple-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 14 27 / var(--tw-text-opacity));
+}
+
+.text-porple-800 {
+  --tw-text-opacity: 1;
+  color: rgb(35 28 54 / var(--tw-text-opacity));
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1049,22 +1050,6 @@ video {
 .backdrop-filter {
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-150 {
-  transition-duration: 150ms;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 ::-moz-selection {
@@ -1121,10 +1106,6 @@ video {
   .hover\:bg-porple-600:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(70 56 107 / var(--tw-bg-opacity));
-  }
-
-  .hover\:fill-porple-600:hover {
-    fill: #46386B;
   }
 
   .hover\:text-porple-400:hover {
@@ -1199,8 +1180,8 @@ video {
   background-color: rgb(35 28 54 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:fill-porple-50 {
-  fill: #EDEBF5;
+.dark .dark\:fill-white {
+  fill: #fff;
 }
 
 .dark .dark\:text-white {
@@ -1213,11 +1194,17 @@ video {
   color: rgb(150 134 192 / var(--tw-text-opacity));
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .dark .dark\:hover\:fill-porple-500:hover {
-    fill: #574687;
-  }
+.dark .dark\:text-porple-100 {
+  --tw-text-opacity: 1;
+  color: rgb(220 215 234 / var(--tw-text-opacity));
+}
 
+.dark .dark\:text-porple-200 {
+  --tw-text-opacity: 1;
+  color: rgb(185 174 213 / var(--tw-text-opacity));
+}
+
+@media (hover: hover) and (pointer: fine) {
   .dark .dark\:hover\:text-porple-500:hover {
     --tw-text-opacity: 1;
     color: rgb(87 70 135 / var(--tw-text-opacity));

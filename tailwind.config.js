@@ -61,6 +61,9 @@ module.exports = {
 					900: '#110E1B',
 				},
 			},
+			fontFamily: {
+				sans: ['Inter var'],
+			},
 		},
 		corePlugins: {
 			fontSize: false,
