@@ -11,12 +11,12 @@
 	<!--================== BODY ==================-->
 	<body
 		id="home"
-		class="flex min-h-screen flex-col overflow-x-hidden bg-porple-200 text-porple-800 dark:bg-porple-800 dark:text-porple-100">
+		class="flex min-h-screen animate-ltr flex-col overflow-x-hidden bg-porple-200 bg-topography bg-repeat text-porple-800 dark:bg-porple-800 dark:text-porple-100">
 		<!--================== HEADER ==================-->
-		<header class="sticky top-0 z-50 bg-porple-200 dark:bg-porple-800">
+		<header class="sticky top-0 z-40 bg-porple-200 dark:bg-porple-800">
 			<!--================== NAVBAR ==================-->
 			<nav
-				class="hidden h-10 flex-row items-center justify-center border-b border-porple-900 py-8 text-center font-semibold dark:border-porple-200 md:visible md:flex md:space-x-32 lg:space-x-64 xl:space-x-96">
+				class="hidden h-10 flex-row items-center justify-center border-b border-porple-900 py-8 text-center font-semibold shadow-2xl backdrop-blur-lg backdrop-opacity-70 backdrop-filter dark:border-porple-200 md:visible md:flex md:space-x-32 lg:space-x-64 xl:space-x-96">
 				<a
 					href="./index.html"
 					class="text-4xl font-extrabold hover:text-porple-400">
@@ -28,7 +28,8 @@
 					<a href="#contact" class="hover:text-porple-400">Contact</a>
 				</div>
 				<!--================== SWITCH THEMES BUTTON ==================-->
-				<button class="flex h-9 w-9 items-center justify-center">
+				<button
+					class="flex h-9 w-9 items-center justify-center rounded-lg border-porple-900 hover:border dark:border-porple-200">
 					<svg
 						class="dark h-6 w-6 cursor-pointer stroke-current stroke-2">
 						<path
@@ -84,7 +85,7 @@
 				<p>All of the languages I use and learn can be found here !</p>
 			</div>
 			<div
-				class="mt-12 flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+				class="mt-12 flex flex-col items-center space-y-4 rounded-lg p-8 shadow-2xl backdrop-blur-2xl backdrop-opacity-70 backdrop-filter md:flex-row md:space-y-0 md:space-x-4">
 				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/">
 					<img src="./assets/img/html.svg"" class="h-24 w-24" />
 				</a>
@@ -117,16 +118,6 @@
 					Here you will find all my contact informations, feel free to
 					contact me !
 				</p>
-			</div>
-			<div
-				class="space m-4 mt-12 flex flex-row flex-wrap items-center justify-center">
-				<!-- <a
-					href="https://www.linkedin.com/in/romain-croquelois-25a6a0265/">
-					<img src="./assets/img/linkedin.svg" class="h-24 w-24" />
-				</a> -->
-				<a href="https://github.com/etetdev/">
-					<img src="./assets/img/github.svg"" class="h-24 w-24" />
-				</a>
 			</div>
 			<!--================== CONTACT FORM ==================-->
 			<form

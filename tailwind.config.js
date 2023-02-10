@@ -7,11 +7,15 @@ module.exports = {
 	},
 	theme: {
 		extend: {
+			backgroundImage: {
+				topography: "url('/assets/img/background.svg')",
+			},
 			animation: {
 				fade: 'fade 1s',
-				gradient: 'gradient 5s ease infinite',
+				gradient: 'gradient 5s linear infinite',
 				wave: 'wave 3s linear infinite',
 				text: 'text 8s infinite',
+				ltr: 'ltr-linear-infinite 60s linear infinite',
 			},
 			keyframes: {
 				fade: {
@@ -45,6 +49,10 @@ module.exports = {
 					'66%': { content: '"Salut !"' },
 					'67%': { content: '"こんにちは !"' },
 					'100%': { content: '"こんにちは !"' },
+				},
+				'ltr-linear-infinite': {
+					'0%': { 'background-position': 'top left' },
+					'100%': { 'background-position': 'bottom right' },
 				},
 			},
 			colors: {
