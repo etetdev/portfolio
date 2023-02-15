@@ -15,7 +15,7 @@ module.exports = {
 				gradient: 'gradient 5s linear infinite',
 				wave: 'wave 3s linear infinite',
 				text: 'text 8s infinite',
-				ltr: 'ltr-linear-infinite 60s linear infinite',
+				background: 'background 90s linear infinite',
 			},
 			keyframes: {
 				fade: {
@@ -50,7 +50,7 @@ module.exports = {
 					'67%': { content: '"こんにちは !"' },
 					'100%': { content: '"こんにちは !"' },
 				},
-				'ltr-linear-infinite': {
+				background: {
 					'0%': { 'background-position': 'top left' },
 					'100%': { 'background-position': 'bottom right' },
 				},
