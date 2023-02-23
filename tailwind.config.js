@@ -11,17 +11,12 @@ module.exports = {
 				topography: "url('/assets/img/background.svg')",
 			},
 			animation: {
-				fade: 'fade 1s',
-				gradient: 'gradient 5s linear infinite',
+				gradient: 'gradient 5s ease-in-out infinite alternate',
 				wave: 'wave 3s linear infinite',
-				text: 'text 8s infinite',
+				text: 'text 9s infinite',
 				background: 'background 90s linear infinite',
 			},
 			keyframes: {
-				fade: {
-					'0%': { opacity: '0' },
-					'100%': { opacity: '1' },
-				},
 				gradient: {
 					'0%, 100%': {
 						'background-size': '200% 200%',
