@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 ::selection {
-	background-color: #c7b6fc;
-	color: #000000;
+	@apply bg-purple-500 text-black;
 }
 .display-none {
 	@apply hidden;

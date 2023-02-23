@@ -1,4 +1,9 @@
+# Ignore vercel files
 .vercel
 vercel.json
+
+# Ignore node_modules folder
 node_modules
-assets
+
+# Ignore .webp files
+*.webp
