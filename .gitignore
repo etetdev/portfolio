@@ -6,4 +6,4 @@ vercel.json
 node_modules
 
 # Ignore .webp files
-*.webp
+assets
